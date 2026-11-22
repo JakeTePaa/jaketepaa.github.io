@@ -1,0 +1,6 @@
+# Publish only the site and its design notes.
+# Everything else is local working material (private notes, review captures, installed skills).
+/*
+!/index.html
+!/DESIGN.md
+!/.gitignore
