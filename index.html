@@ -3,268 +3,212 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jake | AI and social media marketing in Australia</title>
-<meta name="description" content="AI content production, social media management and launch planning for brands bringing their products to Australia.">
+<title>Jakes Space | AI and social media marketing in Australia</title>
+<meta name="description" content="Jakes Space is a marketing agency for AI content production, social media management and launch planning for brands bringing their products to Australia.">
 <meta name="page-type" content="service">
 <meta name="site-kind" content="other">
-<meta name="theme-color" content="#e3a335">
-<meta property="og:title" content="Jake | AI and social media marketing in Australia">
+<meta name="theme-color" content="#0B0D12">
+<meta property="og:title" content="Jakes Space | AI and social media marketing in Australia">
 <meta property="og:description" content="AI content production, social media management and launch planning for brands bringing their products to Australia.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%232e4a2b'/%3E%3Ccircle cx='16' cy='16' r='11' fill='%23f6dfa9'/%3E%3Ccircle cx='16' cy='14' r='5' fill='%23b53a25'/%3E%3Cpath d='M5 21h22v6H5z' fill='%232e4a2b'/%3E%3C/svg%3E">
+<meta property="og:image" content="https://jaketepaa.space/images/icon.png">
+<link rel="icon" type="image/png" href="images/icon.png">
+<link rel="apple-touch-icon" href="images/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400..600&family=Besley:wght@400..600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400..800&display=swap" rel="stylesheet">
 <style>
-  /* Papers: flat, unmixed colours. Depth comes only from one paper overlapping another. */
+  /* Brand colours, straight from the Jakes Space brand sheet. */
   :root {
-    --ochre: #e3a335;
-    --sky: #f6dfa9;
-    --paper: #f5e9d0;
-    --paper-muted: #d9ceb4;
-    --olive: #7d9440;
-    --green: #2e4a2b;
-    --green-deep: #1f331d;
-    --red: #b53a25;
-    --ink: #1d1a14;
-    --ink-soft: #3d3628;
-    --font-display: "Besley", Georgia, serif;
-    --font-text: "Albert Sans", system-ui, sans-serif;
+    --obsidian: #0B0D12;   /* Obsidian Black */
+    --offwhite: #F5F5F0;   /* Off White */
+    --indigo: #5046E5;     /* Electric Indigo */
+    --titanium: #A0A4B0;   /* Titanium Grey */
+
+    --panel: #12151C;      /* obsidian, one step up, for cards */
+    --line: rgba(160, 164, 176, .18);
+    --font: "Plus Jakarta Sans", system-ui, sans-serif;
     --wrap: 1200px;
     --gutter: clamp(20px, 4vw, 48px);
     --ease: cubic-bezier(.16, 1, .3, 1);
-    --hills: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 48' preserveAspectRatio='none'%3E%3Cpath d='M0 48V30C160 14 300 10 460 24S760 44 920 27 1240 5 1440 20V48Z'/%3E%3C/svg%3E");
-    --grass: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 24' preserveAspectRatio='none'%3E%3Cpath d='M0 24V16L10 12 14 4 18 12 34 14 40 6 46 14 62 13 70 2 76 13 92 14 98 7 104 14 120 16V24Z'/%3E%3C/svg%3E");
   }
 
   *, *::before, *::after { box-sizing: border-box; }
-  html { scroll-behavior: smooth; scrollbar-color: var(--green) var(--paper); }
+  html { scroll-behavior: smooth; scrollbar-color: var(--indigo) var(--obsidian); }
   body {
-    margin: 0;
-    background: var(--ochre);
-    color: var(--ink);
-    font: 400 1.0625rem/1.6 var(--font-text);
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    caret-color: var(--red);
+    margin: 0; background: var(--obsidian); color: var(--offwhite);
+    font: 400 1.0625rem/1.65 var(--font);
+    -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
   }
-  ::selection { background: var(--green); color: var(--paper); }
+  ::selection { background: var(--indigo); color: var(--offwhite); }
   img, svg { display: block; max-width: 100%; }
   a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px; }
-  a:focus-visible, button:focus-visible {
-    outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 4px;
-  }
-  .skip {
-    position: absolute; left: 16px; top: -60px; z-index: 50;
-    background: var(--ink); color: var(--paper); padding: 10px 16px; border-radius: 6px;
-  }
+  a:focus-visible { outline: 2px solid var(--indigo); outline-offset: 4px; border-radius: 6px; }
+  .skip { position: absolute; left: 16px; top: -60px; z-index: 50; background: var(--indigo); color: var(--offwhite); padding: 10px 16px; border-radius: 8px; }
   .skip:focus { top: 16px; }
   .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
 
-  h1, h2, h3 {
-    font-family: var(--font-display); font-weight: 400; margin: 0;
-    letter-spacing: -0.02em; text-wrap: balance;
-  }
-  h2 { font-size: clamp(2.1rem, 4.2vw, 3.6rem); line-height: 1.05; }
-  h3 { font-size: clamp(1.5rem, 2.4vw, 2rem); line-height: 1.1; }
+  h1, h2, h3 { margin: 0; font-weight: 700; letter-spacing: -0.035em; text-wrap: balance; }
+  h2 { font-size: clamp(2.1rem, 4.4vw, 3.6rem); line-height: 1.04; }
+  h3 { font-size: clamp(1.35rem, 2vw, 1.65rem); line-height: 1.15; letter-spacing: -0.02em; }
   p { margin: 0; text-wrap: pretty; }
+  .muted { color: var(--titanium); }
 
-  /* Buttons: one solid style, one quiet link. They step on hover and press on click. */
+  /* Wide-tracked caps, like MARKETING AGENCY under the logo. */
+  .eyebrow {
+    display: block; margin-bottom: 20px;
+    font-size: .8rem; font-weight: 600; letter-spacing: .32em; text-transform: uppercase; color: var(--titanium);
+  }
+
   .btn {
-    display: inline-flex; align-items: center; min-height: 52px; padding: 0 26px;
-    border-radius: 999px; background: var(--ink); color: var(--paper);
-    font: 500 1rem/1 var(--font-text); text-decoration: none;
-    transition: transform .25s var(--ease), background-color .25s var(--ease);
+    display: inline-flex; align-items: center; min-height: 52px; padding: 0 26px; border-radius: 12px;
+    background: var(--indigo); color: var(--offwhite); font: 600 1rem/1 var(--font); text-decoration: none;
+    transition: transform .25s var(--ease), background-color .25s var(--ease), box-shadow .25s var(--ease);
   }
-  .btn:hover { transform: translateY(-2px); background: var(--green-deep); }
+  .btn:hover { transform: translateY(-2px); background: #5d54f0; box-shadow: 0 10px 30px -10px rgba(80, 70, 229, .7); }
   .btn:active { transform: translateY(1px); }
-  .link {
-    display: inline-flex; align-items: center; min-height: 52px; font-weight: 500;
-    text-decoration: underline; text-decoration-color: currentColor;
-  }
+  .link { display: inline-flex; align-items: center; min-height: 52px; font-weight: 600; text-decoration: underline; text-decoration-color: var(--indigo); }
   .link:hover { text-decoration-thickness: 2px; }
 
-  /* Every section after the hero is a new sheet pasted over the last,
-     with a cut top edge and a sliver of a different paper showing beneath. */
-  .sheet {
-    position: relative; background: var(--bg); color: var(--fg, var(--ink));
-    padding: clamp(72px, 10vw, 128px) 0;
-  }
-  .sheet::before, .sheet::after {
-    content: ""; position: absolute; left: 0; right: 0; height: 40px; pointer-events: none;
-    -webkit-mask: var(--edge) var(--edge-pos, 0 0) / var(--edge-size, 100% 100%) repeat-x;
-            mask: var(--edge) var(--edge-pos, 0 0) / var(--edge-size, 100% 100%) repeat-x;
-  }
-  .sheet::after { top: -39px; background: var(--bg); z-index: 2; }
-  .sheet::before { top: -47px; background: var(--under); z-index: 1; }
-  .sheet > * { position: relative; z-index: 3; }
-  .edge-hills { --edge: var(--hills); }
-  .edge-grass { --edge: var(--grass); --edge-size: 120px 100%; }
+  section { padding: clamp(80px, 11vw, 140px) 0; }
+  .section-head { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 64px; align-items: end; margin-bottom: 56px; }
+  .section-head p { max-width: 46ch; color: var(--titanium); }
 
-  /* ---------- Header and hero ---------- */
-  .top { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 84px; }
-  .brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; font: 500 1.25rem/1 var(--font-display); }
-  .brand svg { width: 34px; height: 34px; }
-  .top nav ul { display: flex; gap: 32px; list-style: none; margin: 0; padding: 0; }
-  .top nav a { text-decoration: none; font-weight: 500; }
-  .top nav a:hover { text-decoration: underline; }
+  /* ---------- Header ---------- */
+  .top { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 88px; }
+  .brand { display: inline-flex; align-items: center; gap: 14px; text-decoration: none; }
+  .brand img { height: 30px; width: auto; }
+  .brand .word { display: grid; line-height: 1; }
+  .brand b { font-size: 1.2rem; font-weight: 700; letter-spacing: -0.03em; }
+  .brand small { margin-top: 5px; font-size: .55rem; font-weight: 600; letter-spacing: .34em; text-transform: uppercase; color: var(--titanium); }
+  .brand .rule { width: 1px; height: 30px; background: var(--titanium); opacity: .5; }
+  .top nav ul { display: flex; gap: 34px; list-style: none; margin: 0; padding: 0; }
+  .top nav a { text-decoration: none; font-weight: 500; color: var(--titanium); transition: color .2s; }
+  .top nav a:hover { color: var(--offwhite); }
   .top .btn { min-height: 44px; padding: 0 20px; }
 
+  /* ---------- Hero ---------- */
   .hero {
-    min-height: calc(100svh - 84px);
-    display: grid; grid-template-columns: 1.15fr 1fr; align-items: center; gap: clamp(32px, 5vw, 72px);
-    padding-bottom: 88px;
+    min-height: calc(100svh - 88px); display: grid; grid-template-columns: 1.2fr 1fr; align-items: center;
+    gap: clamp(32px, 5vw, 72px); padding: 24px var(--gutter) 96px;
   }
-  .hero h1 {
-    font-size: clamp(2.6rem, 5vw, 4.6rem); line-height: 1.03; letter-spacing: -0.026em;
-    max-width: 16ch;
-  }
-  .hero .lead { margin-top: 28px; font-size: 1.25rem; max-width: 34ch; color: var(--ink-soft); }
-  .hero .lead strong { color: var(--ink); font-weight: 600; }
+  .hero h1 { font-size: clamp(2.7rem, 5.4vw, 5rem); line-height: 1.02; letter-spacing: -0.045em; max-width: 15ch; }
+  .hero h1 em { font-style: normal; color: var(--indigo); }
+  .hero .lead { margin-top: 28px; font-size: 1.2rem; max-width: 38ch; color: var(--titanium); }
+  .hero .lead strong { color: var(--offwhite); font-weight: 600; }
   .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; margin-top: 40px; }
 
-  .roundel { width: 100%; max-width: 520px; justify-self: end; aspect-ratio: 1; overflow: visible; }
-  .roundel use { transform-box: view-box; transform-origin: 50% 50%; }
+  /* The app-icon tile from the brand sheet, at hero size. */
+  .tile {
+    position: relative; justify-self: end; width: 100%; max-width: 440px; aspect-ratio: 1;
+    display: grid; place-items: center; border-radius: 22%;
+    background: var(--panel); border: 1px solid var(--line);
+    box-shadow: 0 40px 120px -40px rgba(80, 70, 229, .55), inset 0 1px 0 rgba(245, 245, 240, .06);
+    animation: rise 1s var(--ease) backwards;
+  }
+  .tile img { width: 62%; height: auto; }
+  .tile::after {
+    content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+    background: radial-gradient(60% 60% at 70% 30%, rgba(80, 70, 229, .16), transparent 70%);
+  }
+  @keyframes rise { from { opacity: 0; transform: translateY(24px) scale(.97); } to { opacity: 1; transform: none; } }
 
-  /* Hero entrance: each paper layer settles onto the stack once, in order. */
-  @keyframes settle {
-    from { opacity: 0; transform: translateY(-18px) rotate(-2deg); }
-    to { opacity: 1; transform: none; }
+  /* ---------- Services ---------- */
+  .services { border-top: 1px solid var(--line); }
+  .cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .card {
+    display: flex; flex-direction: column; gap: 16px; padding: 36px 32px 34px; border-radius: 20px;
+    background: var(--panel); border: 1px solid var(--line);
+    transition: border-color .3s var(--ease), transform .3s var(--ease);
   }
-  .hero .roundel use { animation: settle .9s var(--ease) backwards; }
-  .hero .roundel use:nth-child(2) { animation-delay: .1s; }
-  .hero .roundel use:nth-child(3) { animation-delay: .2s; }
-  .hero .roundel use:nth-child(4) { animation-delay: .3s; }
-  .hero .roundel use:nth-child(5) { animation-delay: .42s; }
-  .hero .roundel use:nth-child(6) { animation-delay: .54s; }
-  .hero .roundel use:nth-child(7) { animation-delay: .66s; }
-  .hero .roundel use:nth-child(8) { animation-delay: .78s; }
+  .card:hover { border-color: rgba(80, 70, 229, .6); transform: translateY(-3px); }
+  .card .num { font-size: .8rem; font-weight: 700; letter-spacing: .2em; color: var(--indigo); }
+  .card p { color: var(--titanium); }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: auto 0 0; padding: 12px 0 0; }
+  .chips li { font-size: .82rem; font-weight: 500; padding: 5px 12px; border-radius: 8px; border: 1px solid var(--line); color: var(--offwhite); white-space: nowrap; }
+  .card.feature { background: var(--indigo); border-color: var(--indigo); }
+  .card.feature .num, .card.feature p { color: rgba(245, 245, 240, .82); }
+  .card.feature .chips li { border-color: rgba(245, 245, 240, .35); }
 
-  /* ---------- Services: three strips of paper, each pasted over the one before ---------- */
-  .services { --bg: var(--paper); --under: var(--olive); }
-  .section-head { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 64px; align-items: end; margin-bottom: 56px; }
-  .section-head p { max-width: 46ch; color: var(--ink-soft); }
-  .strips { list-style: none; margin: 0; padding: 0; }
-  .strip {
-    position: relative; display: grid; grid-template-columns: 1fr 1.25fr; gap: 16px 56px;
-    padding: 44px clamp(24px, 4vw, 56px) 52px; background: var(--s-bg); color: var(--s-fg);
-    border-radius: 18px 18px 0 0;
-  }
-  .strip + .strip { margin-top: -18px; }
-  .strip:nth-child(1) { --s-bg: var(--ochre); --s-fg: var(--ink); }
-  .strip:nth-child(2) { --s-bg: var(--green); --s-fg: var(--paper); }
-  .strip:nth-child(3) { --s-bg: var(--red); --s-fg: var(--paper); border-radius: 18px; }
-  .strip p { max-width: 48ch; }
-  .strip ul {
-    grid-column: 2; display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 8px 0 0; padding: 0;
-  }
-  .strip ul li {
-    font-size: .875rem; font-weight: 500; padding: 6px 14px; border-radius: 999px;
-    border: 1.5px solid currentColor; white-space: nowrap;
-  }
-
-  /* ---------- Work ---------- */
-  .work { --bg: var(--green); --fg: var(--paper); --under: var(--ochre); }
-  .work .section-head p { color: var(--paper-muted); }
-  .plates { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 32px; isolation: isolate; }
-  /* Each plate is two cut papers: the plate itself and an olive sheet pasted beneath, offset. */
-  .plate {
-    position: relative; display: flex; flex-direction: column; background: var(--paper); color: var(--ink);
-    border-radius: 3px;
-  }
-  .plate::before {
-    content: ""; position: absolute; inset: -7px; z-index: -1;
-    background: var(--olive); border-radius: 3px; transform: rotate(-1.2deg);
-  }
-  .plate:first-child::before { transform: rotate(-.5deg); }
-  .plate:nth-child(3)::before { transform: rotate(.9deg); }
-  .plate .window { border-radius: 3px 3px 0 0; }
-  /* The body is cut with a hill edge where it meets the picture window. */
-  .plate .body { position: relative; }
-  .plate .body::before {
-    content: ""; position: absolute; left: 0; right: 0; top: -15px; height: 16px; background: var(--paper);
-    -webkit-mask: var(--hills) 0 0 / 100% 100%; mask: var(--hills) 0 0 / 100% 100%;
-  }
+  /* ---------- Work (Off White section, like the light logo panel) ---------- */
+  .work { background: var(--offwhite); color: var(--obsidian); }
+  .work .eyebrow, .work .section-head p { color: #5b5f6b; }
+  .plates { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .plate { display: flex; flex-direction: column; border-radius: 20px; overflow: hidden; background: #fff; border: 1px solid rgba(11, 13, 18, .08); }
   .plate:first-child { grid-column: 1 / -1; flex-direction: row; }
-  .plate:first-child .body { flex: 1; align-content: center; padding: 40px clamp(28px, 4vw, 56px); }
-  .plate:first-child h3 { font-size: clamp(1.9rem, 3vw, 2.6rem); }
-  @media (min-width: 901px) { .plate:first-child .body::before { display: none; } }
-  .plate .window {
-    position: relative; aspect-ratio: 16 / 10; background: var(--sky);
-    display: grid; place-items: center; overflow: hidden;
-  }
+  .plate .window { position: relative; aspect-ratio: 16 / 10; background: var(--obsidian); display: grid; place-items: center; overflow: hidden; }
   .plate:first-child .window { aspect-ratio: auto; min-height: 340px; flex: 1.15; }
-  .plate .window img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-  .plate .window svg { width: 46%; max-width: 220px; }
-  .plate .body { padding: 26px 28px 30px; display: grid; gap: 10px; }
-  .tags .status { background: var(--red); color: var(--paper); font-weight: 600; }
-  .plate p { color: var(--ink-soft); }
-  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
-  .tags span { white-space: nowrap; font-size: .8125rem; padding: 3px 10px; border-radius: 999px; background: var(--sky); }
+  .plate:nth-child(2) .window { background: var(--indigo); }
+  .plate .window > img:not(.mark) { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .plate .window .mark { width: 34%; max-width: 190px; height: auto; opacity: .95; }
+  .plate .body { padding: 28px 30px 32px; display: grid; gap: 10px; align-content: start; }
+  .plate:first-child .body { flex: 1; align-content: center; padding: 40px clamp(28px, 4vw, 56px); }
+  .plate:first-child h3 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+  .plate p { color: #4a4e59; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .tags span { white-space: nowrap; font-size: .8rem; font-weight: 500; padding: 4px 10px; border-radius: 8px; background: #ecedf0; color: #3a3e48; }
+  .tags .status { background: var(--obsidian); color: var(--offwhite); font-weight: 600; }
 
-  /* ---------- Process: the roundel is cut and pasted again, one layer per step ---------- */
-  .process { --bg: var(--ochre); --under: var(--red); }
-  .process .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 96px); }
-  .process h2 { margin-bottom: 24px; }
-  .process .intro { color: var(--ink-soft); max-width: 40ch; }
-  .steps { list-style: none; margin: 40px 0 0; padding: 0; }
-  .step { min-height: 52vh; padding: 28px 0; border-top: 2px solid var(--ink); }
-  .step h3 { opacity: .5; transition: opacity .5s var(--ease); }
-  .step.is-on h3, .no-build .step h3 { opacity: 1; }
-  .step h3 { margin-bottom: 12px; }
-  .step p { max-width: 40ch; }
-  .stage { position: sticky; top: 12vh; height: 76vh; display: grid; place-items: center; }
-  .build use { transition: opacity .5s var(--ease), transform .7s var(--ease); }
-  .build[data-step="1"] .l2, .build[data-step="1"] .l3, .build[data-step="2"] .l3 {
-    opacity: 0; transform: translateY(-22px) rotate(-3deg);
+  /* ---------- Process ---------- */
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; counter-reset: step; }
+  .step { padding-top: 28px; border-top: 1px solid var(--line); position: relative; }
+  .step::before {
+    counter-increment: step; content: "0" counter(step);
+    display: block; margin-bottom: 20px; font-size: clamp(3rem, 6vw, 4.5rem); font-weight: 800; line-height: 1; letter-spacing: -0.05em;
+    color: transparent; -webkit-text-stroke: 1px var(--titanium);
   }
+  .step::after { content: ""; position: absolute; top: -1px; left: 0; width: 56px; height: 2px; background: var(--indigo); }
+  .step h3 { margin-bottom: 12px; }
+  .step p { max-width: 36ch; color: var(--titanium); }
 
   /* ---------- About ---------- */
-  .about { --bg: var(--paper); --under: var(--green); }
+  .about { border-top: 1px solid var(--line); }
   .about .wrap { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(40px, 7vw, 112px); align-items: center; }
-  .portrait { position: relative; aspect-ratio: 4 / 5; border-radius: 999px 999px 20px 20px; background: var(--green); overflow: hidden; }
-  .portrait img { width: 100%; height: 100%; object-fit: cover; }
-  .portrait .initial {
-    position: absolute; inset: 0; display: grid; place-items: center;
-    font: 400 clamp(7rem, 16vw, 12rem)/1 var(--font-display); color: var(--sky);
+  .portrait {
+    position: relative; aspect-ratio: 4 / 5; border-radius: 28px; overflow: hidden;
+    background: var(--panel); border: 1px solid var(--line); display: grid; place-items: center;
   }
+  .portrait > img:not(.mark) { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .portrait .mark { width: 56%; height: auto; }
   .about h2 { margin-bottom: 28px; }
   .about p + p { margin-top: 18px; }
-  .about p { max-width: 52ch; font-size: 1.125rem; color: var(--ink-soft); }
-  .about p:first-of-type { color: var(--ink); font-size: 1.3rem; }
+  .about p { max-width: 52ch; font-size: 1.1rem; color: var(--titanium); }
+  .about p:first-of-type { color: var(--offwhite); font-size: 1.3rem; font-weight: 500; }
 
-  /* ---------- Close ---------- */
-  .close { --bg: var(--red); --fg: var(--paper); --under: var(--ochre); }
-  .close h2 { font-size: clamp(2.8rem, 7vw, 6rem); line-height: 1; max-width: 12ch; letter-spacing: -0.026em; }
-  .close p { margin-top: 28px; font-size: 1.2rem; max-width: 40ch; }
-  .close .btn { background: var(--paper); color: var(--ink); }
-  .close .btn:hover { background: var(--sky); }
-  .close a:focus-visible { outline-color: var(--paper); }
+  /* ---------- Close (Electric Indigo panel, like the indigo logo variation) ---------- */
+  .close .panel {
+    border-radius: 28px; background: var(--indigo); padding: clamp(48px, 7vw, 96px) clamp(28px, 6vw, 88px);
+    position: relative; overflow: hidden;
+  }
+  .close .panel > img { position: absolute; right: -2%; bottom: -12%; width: min(46%, 420px); opacity: .14; pointer-events: none; }
+  .close .eyebrow { color: rgba(245, 245, 240, .75); }
+  .close h2 { position: relative; font-size: clamp(2.6rem, 6.4vw, 5.4rem); line-height: 1; max-width: 13ch; letter-spacing: -0.045em; }
+  .close p { position: relative; margin-top: 28px; font-size: 1.2rem; max-width: 40ch; color: rgba(245, 245, 240, .85); }
+  .close .actions { position: relative; }
+  .close .btn { background: var(--obsidian); }
+  .close .btn:hover { background: #1a1e28; box-shadow: none; }
+  .close .link { text-decoration-color: var(--offwhite); }
+  .close a:focus-visible { outline-color: var(--offwhite); }
 
-  footer.sheet { --bg: var(--green-deep); --fg: var(--paper-muted); --under: var(--olive); padding: 56px 0 40px; font-size: .9375rem; }
-  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 32px; }
-  footer a:focus-visible { outline-color: var(--paper); }
+  footer { border-top: 1px solid var(--line); padding: 40px 0 48px; font-size: .92rem; color: var(--titanium); }
+  footer .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; }
+  footer img { height: 34px; width: auto; }
 
   /* ---------- Small screens ---------- */
   @media (max-width: 900px) {
     .top nav { display: none; }
-    .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 24px; padding-bottom: 96px; }
-    .roundel { justify-self: center; max-width: 300px; }
-    .section-head, .strip, .about .wrap, .process .wrap { grid-template-columns: 1fr; }
-    .strip ul { grid-column: 1; }
-    .plates { grid-template-columns: 1fr; }
+    .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 16px; }
+    .tile { justify-self: center; max-width: 240px; order: -1; }
+    .section-head, .about .wrap, .cards, .steps, .plates { grid-template-columns: 1fr; }
     .plate:first-child { grid-column: auto; flex-direction: column; }
     .plate:first-child .window { aspect-ratio: 16 / 10; min-height: 0; flex: none; }
-    .plate:first-child .body { padding: 26px 28px 30px; }
-    .stage { position: static; height: auto; max-width: 340px; margin: 0 auto; order: -1; }
-    .step { min-height: 0; }
-    .step h3 { opacity: 1; }
-    .build[data-step] use.l2, .build[data-step] use.l3 { opacity: 1; transform: none; }
+    .plate:first-child .body { padding: 28px 30px 32px; }
     .portrait { max-width: 340px; }
   }
   @media (max-width: 480px) {
     .actions .btn { width: 100%; justify-content: center; }
     .top .btn { display: none; }
+    .brand small { display: none; }
   }
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
@@ -275,43 +219,11 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
-<!-- Papercut layers. Each <symbol> is one sheet of flat paper; both roundels on the page stack them with <use>. -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-  <defs>
-    <clipPath id="disc"><circle cx="200" cy="200" r="168"/></clipPath>
-    <path id="acacia" d="M134 302 139 240 116 214 122 210 137 228 149 206 155 210 142 238 142 302Z M76 216C86 197 110 189 136 191 162 189 186 197 196 214 178 220 158 215 136 219 114 215 94 221 76 216Z"/>
-  </defs>
-  <symbol id="ring" viewBox="0 0 400 400">
-    <circle cx="200" cy="200" r="184" fill="#2e4a2b"/>
-    <circle cx="200" cy="200" r="184" fill="none" stroke="#2e4a2b" stroke-width="24" stroke-linecap="round" stroke-dasharray="0 24.085"/>
-  </symbol>
-  <symbol id="sky" viewBox="0 0 400 400"><circle cx="200" cy="200" r="170" fill="#f6dfa9"/></symbol>
-  <symbol id="sun" viewBox="0 0 400 400"><circle cx="200" cy="176" r="60" fill="#b53a25" clip-path="url(#disc)"/></symbol>
-  <symbol id="ridge" viewBox="0 0 400 400">
-    <path clip-path="url(#disc)" fill="#7d9440" d="M20 262C78 236 128 234 168 247 184 252 192 245 200 238 208 245 216 252 232 247 272 234 322 236 380 262V400H20Z"/>
-  </symbol>
-  <symbol id="trees" viewBox="0 0 400 400">
-    <g clip-path="url(#disc)" fill="#1f331d">
-      <use href="#acacia"/>
-      <use href="#acacia" transform="matrix(-1 0 0 1 400 0)"/>
-    </g>
-  </symbol>
-  <symbol id="grass" viewBox="0 0 400 400">
-    <path clip-path="url(#disc)" fill="#2e4a2b" d="M20 300 58 292 64 280 70 292 108 296 116 283 122 296 168 298 176 285 184 298 200 295 216 298 224 285 232 298 278 296 284 283 292 296 330 292 336 280 342 292 380 300V400H20Z"/>
-  </symbol>
-  <symbol id="birds" viewBox="0 0 400 400">
-    <g fill="#1d1a14">
-      <path d="M150 112 162 104 172 110 182 104 194 112 172 108Z"/>
-      <path d="M150 112 162 104 172 110 182 104 194 112 172 108Z" transform="matrix(-1 0 0 1 400 0)"/>
-    </g>
-  </symbol>
-  <symbol id="cutline" viewBox="0 0 400 400"><circle cx="200" cy="200" r="169" fill="none" stroke="#f5e9d0" stroke-width="4"/></symbol>
-</svg>
-
 <header class="wrap top">
-  <a href="#" class="brand" aria-label="Jake, home">
-    <svg viewBox="0 0 400 400" aria-hidden="true"><use href="#ring"/><use href="#sky"/><use href="#sun"/><use href="#grass"/></svg>
-    Jake
+  <a href="#" class="brand" aria-label="Jakes Space, home">
+    <img src="images/logo-mark.png" alt="" width="309" height="181">
+    <span class="rule" aria-hidden="true"></span>
+    <span class="word"><b>Jakes Space</b><small>Marketing agency</small></span>
   </a>
   <nav aria-label="Sections">
     <ul>
@@ -327,57 +239,59 @@
 <main id="main">
   <section class="wrap hero" aria-labelledby="hero-title">
     <div>
-      <h1 id="hero-title">AI and social media marketing for brands launching in Australia.</h1>
+      <span class="eyebrow">Marketing agency · Australia</span>
+      <h1 id="hero-title">AI and social media marketing for brands <em>launching in Australia.</em></h1>
       <p class="lead">I'm Jake, a marketer <strong>based in Australia</strong>. I use AI tools to make and test content fast, and I'll run the Instagram, TikTok and Facebook accounts that put it in front of your customers.</p>
       <div class="actions">
         <a href="#contact" class="btn">Email Jake</a>
         <a href="#work" class="link">See the work</a>
       </div>
     </div>
-    <svg class="roundel" viewBox="0 0 400 400" role="img" aria-label="Papercut roundel of two acacia trees under a red sun">
-      <use href="#ring"/><use href="#sky"/><use href="#sun"/><use href="#ridge"/><use href="#trees"/><use href="#grass"/><use href="#birds"/><use href="#cutline"/>
-    </svg>
+    <div class="tile" aria-hidden="true"><img src="images/logo-mark.png" alt="" width="309" height="181"></div>
   </section>
 
   <!-- SERVICES -->
-  <section id="services" class="sheet services edge-hills" aria-labelledby="services-title">
+  <section id="services" class="services" aria-labelledby="services-title">
     <div class="wrap">
       <div class="section-head">
-        <h2 id="services-title">Three things I do for brands</h2>
+        <div><span class="eyebrow">Services</span><h2 id="services-title">Three things I do for brands</h2></div>
         <p>Pick one or all three. Most brands new to Australia start with launch planning, then hand over the day-to-day content and social.</p>
       </div>
-      <ul class="strips">
-        <li class="strip">
+      <ul class="cards">
+        <li class="card feature">
+          <span class="num">01</span>
           <h3>AI content production</h3>
           <p>I set up AI workflows that write captions, draft ad copy and make product images in your brand's voice, so you can post more without hiring more people.</p>
-          <ul aria-label="Includes"><li>Content calendars</li><li>Ad copy variants</li><li>Product imagery</li></ul>
+          <ul class="chips" aria-label="Includes"><li>Content calendars</li><li>Ad copy variants</li><li>Product imagery</li></ul>
         </li>
-        <li class="strip">
+        <li class="card">
+          <span class="num">02</span>
           <h3>Social media management</h3>
           <p>I plan, post and reply on Instagram, TikTok and Facebook, then report each month on what worked and what we change next.</p>
-          <ul aria-label="Includes"><li>Channel strategy</li><li>Posting and replies</li><li>Monthly reports</li></ul>
+          <ul class="chips" aria-label="Includes"><li>Channel strategy</li><li>Posting and replies</li><li>Monthly reports</li></ul>
         </li>
-        <li class="strip">
+        <li class="card">
+          <span class="num">03</span>
           <h3>Australian launch planning</h3>
           <p>For brands new to Australia: who your customers are here, what to say to them, which local creators to partner with, and how to run the launch.</p>
-          <ul aria-label="Includes"><li>Audience research</li><li>Positioning</li><li>Creator partnerships</li></ul>
+          <ul class="chips" aria-label="Includes"><li>Audience research</li><li>Positioning</li><li>Creator partnerships</li></ul>
         </li>
       </ul>
     </div>
   </section>
 
   <!-- WORK -->
-  <section id="work" class="sheet work edge-grass" aria-labelledby="work-title">
+  <section id="work" class="work" aria-labelledby="work-title">
     <div class="wrap">
       <div class="section-head">
-        <h2 id="work-title">Projects</h2>
+        <div><span class="eyebrow">Work</span><h2 id="work-title">Projects</h2></div>
         <p>My first case studies are on the way. These are the kinds of projects they will cover, each with the brief, the work and the results.</p>
       </div>
       <div class="plates">
         <!--
           ===== ADDING A PROJECT =====
           Copy one <article class="plate"> block.
-          - Photo: replace the <svg> inside .window with
+          - Photo: replace the <img class="mark"> inside .window with
             <img src="images/your-project.jpg" alt="What the picture shows" loading="lazy" width="1200" height="750">
           - Update the title, sentence and tags.
           - Delete the "Coming soon" tag once it is live.
@@ -385,9 +299,7 @@
           The first plate is shown wide; put your strongest project first.
         -->
         <article class="plate">
-          <div class="window">
-            <svg viewBox="0 0 400 400" aria-hidden="true"><use href="#ring"/><use href="#sky"/><use href="#sun"/><use href="#ridge"/><use href="#trees"/><use href="#grass"/></svg>
-          </div>
+          <div class="window"><img class="mark" src="images/logo-mark.png" alt="" width="309" height="181" loading="lazy"></div>
           <div class="body">
             <h3>AI content engine</h3>
             <p>A workflow that drafts captions, product images and short video scripts for a month of posts, ready for review.</p>
@@ -395,9 +307,7 @@
           </div>
         </article>
         <article class="plate">
-          <div class="window">
-            <svg viewBox="0 0 400 400" aria-hidden="true"><use href="#ring"/><use href="#sky"/><use href="#ridge"/><use href="#grass"/><use href="#birds"/></svg>
-          </div>
+          <div class="window"><img class="mark" src="images/logo-mark.png" alt="" width="309" height="181" loading="lazy" style="filter: brightness(0) invert(1)"></div>
           <div class="body">
             <h3>Social launch playbook</h3>
             <p>A step-by-step plan for launching a new brand on Instagram and TikTok, from the first post through the first months of growth.</p>
@@ -405,9 +315,7 @@
           </div>
         </article>
         <article class="plate">
-          <div class="window">
-            <svg viewBox="0 0 400 400" aria-hidden="true"><use href="#ring"/><use href="#sky"/><use href="#sun"/><use href="#trees"/><use href="#grass"/></svg>
-          </div>
+          <div class="window"><img class="mark" src="images/logo-mark.png" alt="" width="309" height="181" loading="lazy"></div>
           <div class="body">
             <h3>Ad creative testing</h3>
             <p>Using AI to make dozens of ad variations, test them on small budgets, then put the spend behind the winners.</p>
@@ -419,44 +327,37 @@
   </section>
 
   <!-- PROCESS -->
-  <section id="process" class="sheet process edge-hills" aria-labelledby="process-title">
+  <section id="process" aria-labelledby="process-title">
     <div class="wrap">
-      <div>
-        <h2 id="process-title">How a project runs</h2>
-        <p class="intro">Three stages, the same for a single campaign or a full launch.</p>
-        <ol class="steps">
-          <li class="step" data-step="1">
-            <h3>Research</h3>
-            <p>I learn your brand, your customers and the Australian market: what competitors post, what local audiences respond to, and where the gaps are.</p>
-          </li>
-          <li class="step" data-step="2">
-            <h3>Build</h3>
-            <p>I set up the AI workflows, the content calendar and the channel plan, so good content goes out on schedule every week.</p>
-          </li>
-          <li class="step" data-step="3">
-            <h3>Grow</h3>
-            <p>We launch, measure and put more behind what works. You get a plain monthly report showing where the money went and what it returned.</p>
-          </li>
-        </ol>
+      <div class="section-head">
+        <div><span class="eyebrow">Process</span><h2 id="process-title">How a project runs</h2></div>
+        <p>Three stages, the same for a single campaign or a full launch.</p>
       </div>
-      <div class="stage">
-        <svg class="roundel build" data-step="3" viewBox="0 0 400 400" role="img" aria-label="The papercut roundel, built up one layer per stage">
-          <use href="#ring"/><use href="#sky"/><use href="#ridge"/><use href="#grass"/>
-          <use class="l2" href="#trees"/>
-          <use class="l3" href="#sun"/><use class="l3" href="#birds"/>
-          <use href="#cutline"/>
-        </svg>
-      </div>
+      <ol class="steps">
+        <li class="step">
+          <h3>Research</h3>
+          <p>I learn your brand, your customers and the Australian market: what competitors post, what local audiences respond to, and where the gaps are.</p>
+        </li>
+        <li class="step">
+          <h3>Build</h3>
+          <p>I set up the AI workflows, the content calendar and the channel plan, so good content goes out on schedule every week.</p>
+        </li>
+        <li class="step">
+          <h3>Grow</h3>
+          <p>We launch, measure and put more behind what works. You get a plain monthly report showing where the money went and what it returned.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="sheet about edge-grass" aria-labelledby="about-title">
+  <section id="about" class="about" aria-labelledby="about-title">
     <div class="wrap">
-      <!-- PHOTO: replace the .initial span with
+      <!-- PHOTO: replace the <img class="mark"> with
            <img src="images/jake.jpg" alt="Jake" width="800" height="1000"> -->
-      <div class="portrait"><span class="initial" aria-hidden="true">J</span></div>
+      <div class="portrait"><img class="mark" src="images/logo-mark.png" alt="" width="309" height="181" loading="lazy"></div>
       <div>
+        <span class="eyebrow">About</span>
         <h2 id="about-title">About Jake</h2>
         <p>I'm an Australian marketer working where AI tools meet social media.</p>
         <p>AI does the heavy lifting on drafts, variations and testing. I keep the strategy and the voice human, and I make sure every post sounds like your brand, not like a machine.</p>
@@ -466,48 +367,32 @@
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="sheet close edge-hills" aria-labelledby="contact-title">
+  <section id="contact" class="close" aria-labelledby="contact-title">
     <div class="wrap">
-      <h2 id="contact-title">Bringing a brand to Australia? Let's talk.</h2>
-      <p>Tell me what you sell and when you plan to launch, and we can work out where to start.</p>
-      <div class="actions">
-        <a href="mailto:hello@jaketepaa.space" class="btn">Email Jake</a>
-        <!-- TODO: replace with your LinkedIn profile URL -->
-        <a href="https://www.linkedin.com/" class="link" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      <div class="panel">
+        <img src="images/logo-mark.png" alt="" width="309" height="181" style="filter: brightness(0) invert(1)" loading="lazy">
+        <span class="eyebrow">Contact</span>
+        <h2 id="contact-title">Bringing a brand to Australia? Let's talk.</h2>
+        <p>Tell me what you sell and when you plan to launch, and we can work out where to start.</p>
+        <div class="actions">
+          <a href="mailto:hello@jaketepaa.space" class="btn">Email Jake</a>
+          <!-- TODO: replace with your LinkedIn profile URL -->
+          <a href="https://www.linkedin.com/" class="link" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </div>
       </div>
     </div>
   </section>
 </main>
 
-<footer class="sheet edge-grass">
+<footer>
   <div class="wrap">
-    <span>© <span id="year">2026</span> Jake. AI and social media marketing.</span>
-    <span>Based in Australia</span>
+    <img src="images/logo-lockup.png" alt="Jakes Space, marketing agency" width="1152" height="181">
+    <span>© <span id="year">2026</span> Jakes Space · Based in Australia</span>
   </div>
 </footer>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
-  // Process: rebuild the roundel one paper layer per stage as each stage scrolls into the middle of the screen.
-  (function () {
-    var build = document.querySelector('.build');
-    var steps = document.querySelectorAll('.step');
-    var calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (!build || calm || !('IntersectionObserver' in window)) {
-      document.documentElement.classList.add('no-build');
-      return;
-    }
-    build.dataset.step = '1';
-    steps[0].classList.add('is-on');
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (!e.isIntersecting) return;
-        build.dataset.step = e.target.dataset.step;
-        steps.forEach(function (s) { s.classList.toggle('is-on', s === e.target); });
-      });
-    }, { rootMargin: '-45% 0px -45% 0px' });
-    steps.forEach(function (s) { io.observe(s); });
-  })();
 </script>
 </body>
 </html>
